@@ -7,7 +7,7 @@ console.log(
   ' ██║   ██║██╔═══╝ ██╔═██╗ \n' +
   ' ╚██████╔╝██║     ██║  ██╗\n' +
   '  ╚═════╝ ╚═╝     ╚═╝  ╚═╝\n',
-  'color: #4ade80; font-family: monospace; font-size: 12px;'
+  'color: #a78bfa; font-family: monospace; font-size: 12px;'
 );
 console.log(
   '%c👋Opa dev, você é curioso que nem eu, sempre do um F12 > Console kkkkkk\n\n' +
@@ -20,7 +20,7 @@ console.log(
   '%c→ Bora conversar? 🚀',
   'color: #e8edf5; font-size: 13px; font-weight: bold;',
   'color: #6b7a99; font-size: 12px; line-height: 1.8;',
-  'color: #4ade80; font-size: 13px; font-weight: bold;'
+  'color: #a78bfa; font-size: 13px; font-weight: bold;'
 );
 const sections = document.querySelectorAll('section[id]');
 const navLinks = document.querySelectorAll('nav a[href^="#"]');
