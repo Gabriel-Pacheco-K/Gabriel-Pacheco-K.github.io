@@ -445,6 +445,11 @@ section {
   gap: 1.25rem;
 }
 
+/* Último card sozinho na linha ocupa a largura toda */
+.projetos-grid > li:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+}
+
 .projeto-card {
   display: flex;
   flex-direction: column;
