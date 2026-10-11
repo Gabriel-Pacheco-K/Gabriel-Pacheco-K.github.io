@@ -3,7 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gabriel Pacheco Kiesel — Desenvolvedor Back-end</title>
+  <title>Gabriel Pacheco Kiesel — Desenvolvedor Back-end Java</title>
+  <meta name="description" content="Desenvolvedor back-end Java e Spring Boot. APIs REST com PostgreSQL, Redis, Docker, testes automatizados e CI. Estudante de Ciência da Computação.">
+  <meta name="theme-color" content="#080c14">
+
+  <!-- Prévia ao compartilhar o link (LinkedIn, WhatsApp...) -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://gabriel-pacheco-k.github.io/">
+  <meta property="og:title" content="Gabriel Pacheco Kiesel — Desenvolvedor Back-end Java">
+  <meta property="og:description" content="APIs REST com Java, Spring Boot, PostgreSQL, Redis e Docker. Veja meus projetos.">
+  <meta property="og:image" content="https://gabriel-pacheco-k.github.io/img.png">
+  <meta name="twitter:card" content="summary_large_image">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -12,54 +23,64 @@
 </head>
 <body>
 
+  <!-- Ícones reutilizados no site inteiro -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></symbol>
+    <symbol id="i-whatsapp" viewBox="0 0 24 24"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path fill="currentColor" d="M12 0C5.373 0 0 5.373 0 12c0 2.117.554 4.103 1.523 5.827L.057 23.882a.5.5 0 00.61.61l6.056-1.466A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.938a9.926 9.926 0 01-5.058-1.379l-.361-.214-3.737.905.921-3.768-.235-.374A9.927 9.927 0 012.062 12C2.062 6.509 6.509 2.062 12 2.062S21.938 6.509 21.938 12 17.491 21.938 12 21.938z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><path fill="currentColor" d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 010 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.910 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></symbol>
+  </svg>
+
   <!-- ─── HEADER ──────────────────────────────────────────────── -->
   <header>
     <div class="header-inner">
-      <span class="logo">GPK<span class="logo-dot">.</span></span>
-      <nav>
+      <a href="#inicio" class="logo" aria-label="Início">GPK<span class="logo-dot">.</span></a>
+
+      <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span>
+      </button>
+
+      <nav id="menu">
         <a href="#sobre">Sobre</a>
         <a href="#skills">Skills</a>
         <a href="#projetos">Projetos</a>
         <a href="#contato">Contato</a>
-        <a href="https://github.com/Gabriel-Pacheco-K" target="_blank" class="nav-icon" aria-label="GitHub">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
-          </svg>
+        <span class="nav-divider" aria-hidden="true"></span>
+        <a href="https://github.com/Gabriel-Pacheco-K" target="_blank" rel="noopener" class="nav-icon" aria-label="GitHub">
+          <svg width="18" height="18"><use href="#i-github"/></svg>
         </a>
-        <a href="https://www.linkedin.com/in/gabriel-pacheco-3b637a362/" target="_blank" class="nav-icon" aria-label="LinkedIn">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-          </svg>
+        <a href="https://www.linkedin.com/in/gabriel-pacheco-3b637a362/" target="_blank" rel="noopener" class="nav-icon" aria-label="LinkedIn">
+          <svg width="18" height="18"><use href="#i-linkedin"/></svg>
         </a>
-        <a href="https://wa.me/5548988711607" target="_blank" class="nav-icon" aria-label="WhatsApp">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.554 4.103 1.523 5.827L.057 23.882a.5.5 0 00.61.61l6.056-1.466A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.938a9.926 9.926 0 01-5.058-1.379l-.361-.214-3.737.905.921-3.768-.235-.374A9.927 9.927 0 012.062 12C2.062 6.509 6.509 2.062 12 2.062S21.938 6.509 21.938 12 17.491 21.938 12 21.938z"/>
-          </svg>
+        <a href="https://wa.me/5548988711607" target="_blank" rel="noopener" class="nav-icon" aria-label="WhatsApp">
+          <svg width="18" height="18"><use href="#i-whatsapp"/></svg>
         </a>
       </nav>
     </div>
   </header>
 
+  <main>
   <!-- ─── HERO ────────────────────────────────────────────────── -->
   <section id="inicio" class="hero">
-    <article class="hero-inner">
+    <div class="hero-grid" aria-hidden="true"></div>
+    <div class="hero-inner">
 
       <div class="hero-text">
         <p class="eyebrow">Disponível para oportunidades</p>
         <h1>Gabriel<br><span class="name-accent">Pacheco</span><br>Kiesel</h1>
-        <p class="hero-sub">Desenvolvedor back-end em formação — Java, SQL e APIs REST. Estudante de Ciência da Computação com foco em lógica sólida e código limpo.</p>
-        <nav class="hero-actions">
-          <a href="#projetos" class="btn-primary">Ver projetos</a>
+        <p class="hero-sub">Desenvolvedor <strong>back-end Java</strong>. Construo APIs REST com Spring Boot pensando no que acontece em produção: dados consistentes, testes automatizados e código fácil de manter.</p>
+        <div class="hero-actions">
+          <a href="#projetos" class="btn-primary">Ver projetos <span aria-hidden="true">→</span></a>
           <a href="#contato" class="btn-ghost">Entrar em contato</a>
-        </nav>
-        <ul class="tech-stack">
-          <li>Java</li><li>SQL</li><li>HTML</li><li>CSS</li><li>APIs REST</li>
+        </div>
+        <ul class="tech-stack" aria-label="Principais tecnologias">
+          <li>Java 21</li><li>Spring Boot</li><li>PostgreSQL</li><li>Redis</li><li>Docker</li><li>JUnit</li>
         </ul>
       </div>
 
       <figure class="hero-photo">
         <div class="photo-frame">
-          <img src="img.png" alt="Gabriel Pacheco Kiesel">
+          <img src="img.png" alt="Foto de Gabriel Pacheco Kiesel" width="300" height="360">
           <figcaption class="photo-badge">
             <span class="badge-dot"></span>
             Aberto a vagas
@@ -67,271 +88,276 @@
         </div>
       </figure>
 
-    </article>
-    <p class="hero-scroll"><span>↓</span></p>
+    </div>
+    <a href="#sobre" class="hero-scroll" aria-label="Rolar para a próxima seção"><span>↓</span></a>
   </section>
 
   <!-- ─── SOBRE ────────────────────────────────────────────────── -->
   <section id="sobre">
-    <article class="section-inner">
+    <div class="section-inner">
       <p class="section-label">Sobre</p>
       <div class="sobre-grid">
 
         <div class="sobre-esquerda">
           <h2 class="section-title">Quem sou eu</h2>
           <figure class="sobre-foto">
-            <img src="foto2.jpeg" alt="Gabriel Pacheco Kiesel">
+            <img src="foto2.jpeg" alt="Gabriel Pacheco Kiesel" width="220" height="280" loading="lazy">
           </figure>
         </div>
 
         <div class="sobre-content">
-          <p>Estudante de <strong>Ciência da Computação</strong> na 5ª fase, com base sólida em lógica de programação e Programação Orientada a Objetos. Tenho interesse especial em desenvolvimento back-end e estou em evolução constante com Java.</p>
-          <p>Busco minha primeira oportunidade profissional onde possa aprender na prática, contribuir com projetos reais e crescer junto com um time.</p>
+          <p>Estudante de <strong>Ciência da Computação</strong> na 5ª fase, com base sólida em lógica de programação, estruturas de dados e Programação Orientada a Objetos. Meu foco é o <strong>desenvolvimento back-end com Java e Spring Boot</strong>.</p>
+          <p>Gosto de entender o porquê de cada decisão técnica. Nos meus projetos, resolvi problemas reais: impedir que duas pessoas reservem o mesmo horário ao mesmo tempo, acelerar respostas com cache e garantir com testes que tudo continua funcionando.</p>
+          <p>Busco minha primeira oportunidade profissional, para aprender na prática, contribuir com projetos reais e crescer junto com um time.</p>
           <ul class="stats-row">
-            <li class="stat">
-              <span class="stat-num">5ª</span>
-              <span class="stat-label">fase da faculdade</span>
-            </li>
             <li class="stat">
               <span class="stat-num">9+</span>
               <span class="stat-label">projetos no GitHub</span>
             </li>
             <li class="stat">
-              <span class="stat-num">Back</span>
-              <span class="stat-label">foco principal</span>
+              <span class="stat-num">80+</span>
+              <span class="stat-label">testes automatizados</span>
+            </li>
+            <li class="stat">
+              <span class="stat-num">5ª</span>
+              <span class="stat-label">fase da faculdade</span>
             </li>
           </ul>
         </div>
 
       </div>
-    </article>
+    </div>
   </section>
 
   <!-- ─── SKILLS ───────────────────────────────────────────────── -->
   <section id="skills">
-    <article class="section-inner">
+    <div class="section-inner">
       <p class="section-label">Skills</p>
       <h2 class="section-title">O que eu sei fazer</h2>
       <ul class="skills-grid">
         <li class="skill-card">
-          <span class="skill-icon">☕</span>
-          <h3>Java</h3>
-          <p>Lógica, POO, estruturas de dados e orientação a objetos aplicada em projetos acadêmicos.</p>
-          <span class="skill-tag">Back-end</span>
+          <span class="skill-icon" aria-hidden="true">☕</span>
+          <h3>Back-end</h3>
+          <p>APIs REST com Java e Spring Boot, organizadas em camadas, com validação e tratamento de erros padronizado.</p>
+          <ul class="skill-tags"><li>Java 21</li><li>Spring Boot</li><li>REST</li><li>JPA</li></ul>
         </li>
         <li class="skill-card">
-          <span class="skill-icon">🗄️</span>
-          <h3>SQL</h3>
-          <p>Consultas, modelagem relacional e integração com banco de dados em projetos práticos.</p>
-          <span class="skill-tag">Banco de dados</span>
+          <span class="skill-icon" aria-hidden="true">🗄️</span>
+          <h3>Banco de dados</h3>
+          <p>Modelagem relacional, consultas com agregação, índices, migrações versionadas e cache.</p>
+          <ul class="skill-tags"><li>PostgreSQL</li><li>SQL</li><li>Flyway</li><li>Redis</li></ul>
         </li>
         <li class="skill-card">
-          <span class="skill-icon">🔌</span>
-          <h3>APIs REST</h3>
-          <p>Construção e consumo de APIs RESTful com integração a banco de dados.</p>
-          <span class="skill-tag">Integração</span>
+          <span class="skill-icon" aria-hidden="true">🔐</span>
+          <h3>Segurança</h3>
+          <p>Autenticação stateless com token, senhas criptografadas e isolamento dos dados de cada usuário.</p>
+          <ul class="skill-tags"><li>Spring Security</li><li>JWT</li><li>BCrypt</li></ul>
         </li>
         <li class="skill-card">
-          <span class="skill-icon">🌐</span>
-          <h3>HTML & CSS</h3>
-          <p>Desenvolvimento de interfaces web responsivas e semânticas.</p>
-          <span class="skill-tag">Front-end</span>
+          <span class="skill-icon" aria-hidden="true">🧪</span>
+          <h3>Testes</h3>
+          <p>Testes unitários e de integração, inclusive testes de concorrência que provam que as regras de negócio se mantêm sob carga.</p>
+          <ul class="skill-tags"><li>JUnit 5</li><li>Mockito</li><li>MockMvc</li></ul>
         </li>
         <li class="skill-card">
-          <span class="skill-icon">🧠</span>
-          <h3>Lógica de Programação</h3>
-          <p>Resolução de problemas, algoritmos e raciocínio computacional.</p>
-          <span class="skill-tag">Fundamentos</span>
+          <span class="skill-icon" aria-hidden="true">🐳</span>
+          <h3>DevOps</h3>
+          <p>Aplicações em contêiner, ambiente completo subindo com um comando e pipeline que testa cada push.</p>
+          <ul class="skill-tags"><li>Docker</li><li>Compose</li><li>GitHub Actions</li><li>Git</li></ul>
         </li>
         <li class="skill-card">
-          <span class="skill-icon">🌐</span>
-          <h3>Redes de Computadores</h3>
-          <p>Conceitos de redes, protocolos e infraestrutura de comunicação.</p>
-          <span class="skill-tag">Infra</span>
+          <span class="skill-icon" aria-hidden="true">🧠</span>
+          <h3>Fundamentos</h3>
+          <p>Algoritmos, estruturas de dados, redes de computadores e front-end para construir interfaces quando preciso.</p>
+          <ul class="skill-tags"><li>Grafos</li><li>Árvores</li><li>Redes</li><li>HTML/CSS/JS</li></ul>
         </li>
       </ul>
-    </article>
+    </div>
   </section>
 
   <!-- ─── PROJETOS ─────────────────────────────────────────────── -->
   <section id="projetos">
-    <article class="section-inner">
+    <div class="section-inner">
       <p class="section-label">Projetos</p>
       <h2 class="section-title">O que já construí</h2>
-      <ul class="projetos-grid">
+
+      <h3 class="subsection-title">Em destaque</h3>
+      <ul class="featured-grid">
 
         <li>
-          <a href="https://github.com/Gabriel-Pacheco-K/agendamento-api" target="_blank" class="projeto-card">
-            <header class="projeto-header">
-              <span class="projeto-lang html">Java 21 · Spring Boot · PostgreSQL · Docker</span>
-              <span class="projeto-arrow">↗</span>
-            </header>
-            <h3>Agendamento API — Controle de Conflitos</h3>
-            <p>API de agendamento para salões e clínicas: calcula horários livres a partir do expediente e impede reservas duplicadas mesmo com acessos simultâneos (trava pessimista, comprovada por teste concorrente). Ciclo de vida com máquina de estados e 26 testes.</p>
-            <footer class="projeto-footer"><span>Ver no GitHub</span></footer>
+          <a href="https://github.com/Gabriel-Pacheco-K/agendamento-api" target="_blank" rel="noopener" class="featured-card">
+            <div class="featured-top">
+              <span class="featured-icon" aria-hidden="true">📅</span>
+              <span class="projeto-arrow" aria-hidden="true">↗</span>
+            </div>
+            <h4>Agendamento API</h4>
+            <p>Agenda para salões e clínicas que calcula horários livres e impede reservas duplicadas, mesmo com vários acessos ao mesmo tempo.</p>
+            <ul class="featured-points">
+              <li>Trava pessimista comprovada por teste concorrente</li>
+              <li>Máquina de estados do agendamento</li>
+              <li>Cálculo de horários em O(n + m)</li>
+            </ul>
+            <ul class="chips"><li>Java 21</li><li>Spring Boot</li><li>PostgreSQL</li><li>Docker</li></ul>
+            <div class="featured-meta"><span class="ci">CI passando</span><span>26 testes</span></div>
           </a>
         </li>
 
         <li>
-          <a href="https://github.com/Gabriel-Pacheco-K/financas-api" target="_blank" class="projeto-card">
-            <header class="projeto-header">
-              <span class="projeto-lang html">Java 21 · Spring Boot · PostgreSQL · Docker</span>
-              <span class="projeto-arrow">↗</span>
-            </header>
-            <h3>Finanças API — Gestão Financeira</h3>
-            <p>API REST de finanças pessoais com autenticação JWT, filtros e paginação, relatório mensal com saldo e taxa de poupança. Inclui migrações com Flyway, documentação Swagger, 15 testes automatizados (JUnit e Mockito), Docker e CI com GitHub Actions.</p>
-            <footer class="projeto-footer"><span>Ver no GitHub</span></footer>
+          <a href="https://github.com/Gabriel-Pacheco-K/encurtador-url" target="_blank" rel="noopener" class="featured-card">
+            <div class="featured-top">
+              <span class="featured-icon" aria-hidden="true">🔗</span>
+              <span class="projeto-arrow" aria-hidden="true">↗</span>
+            </div>
+            <h4>Encurtador de URL</h4>
+            <p>Encurtador de links com painel de estatísticas: cliques por dia, origem, navegador e dispositivo.</p>
+            <ul class="featured-points">
+              <li>Redirecionamento servido do cache Redis</li>
+              <li>Registro de cliques assíncrono</li>
+              <li>Rate limiting e links com expiração</li>
+            </ul>
+            <ul class="chips"><li>Spring Boot</li><li>Redis</li><li>PostgreSQL</li><li>Chart.js</li></ul>
+            <div class="featured-meta"><span class="ci">CI passando</span><span>39 testes</span></div>
           </a>
         </li>
 
         <li>
-          <a href="https://github.com/Gabriel-Pacheco-K/encurtador-url" target="_blank" class="projeto-card">
-            <header class="projeto-header">
-              <span class="projeto-lang html">Java 21 · Spring Boot · Redis · PostgreSQL</span>
-              <span class="projeto-arrow">↗</span>
-            </header>
-            <h3>Encurtador de URL com Estatísticas</h3>
-            <p>Encurtador de links com painel de cliques por dia, origem, navegador e dispositivo. Redirecionamento com cache em Redis, registro assíncrono de cliques, rate limiting, links com expiração e 39 testes automatizados.</p>
-            <footer class="projeto-footer"><span>Ver no GitHub</span></footer>
-          </a>
-        </li>
-
-        <li>
-          <a href="https://github.com/Gabriel-Pacheco-K/api-rest-clientes" target="_blank" class="projeto-card">
-            <header class="projeto-header">
-              <span class="projeto-lang html">Java · Spring Boot · PostgreSQL</span>
-              <span class="projeto-arrow">↗</span>
-            </header>
-            <h3>API REST — Cadastro de Clientes</h3>
-            <p>API RESTful com CRUD completo desenvolvida com Java e Spring Boot, integrada ao banco de dados PostgreSQL.</p>
-            <footer class="projeto-footer"><span>Ver no GitHub</span></footer>
-          </a>
-        </li>
-
-        <li>
-          <a href="https://github.com/Gabriel-Pacheco-K/sistema-login-java" target="_blank" class="projeto-card">
-            <header class="projeto-header">
-              <span class="projeto-lang html">Java · Spring Boot · Spring Security</span>
-              <span class="projeto-arrow">↗</span>
-            </header>
-            <h3>Sistema de Login</h3>
-            <p>API REST de autenticação com registro e login de usuários, senhas criptografadas com BCrypt e rotas protegidas com Spring Security.</p>
-            <footer class="projeto-footer"><span>Ver no GitHub</span></footer>
-          </a>
-        </li>
-
-        <li>
-          <a href="https://github.com/Gabriel-Pacheco-K/arvore-binaria-java" target="_blank" class="projeto-card">
-            <header class="projeto-header">
-              <span class="projeto-lang html">Java</span>
-              <span class="projeto-arrow">↗</span>
-            </header>
-            <h3>Árvore Binária</h3>
-            <p>Implementação de Árvore Binária com lista dinâmica em Java, incluindo percursos Em-Ordem, Pré-Ordem, Pós-Ordem e Busca Binária.</p>
-            <footer class="projeto-footer"><span>Ver no GitHub</span></footer>
-          </a>
-        </li>
-
-        <li>
-          <a href="https://github.com/Gabriel-Pacheco-K/caminho-mais-barato" target="_blank" class="projeto-card">
-            <header class="projeto-header">
-              <span class="projeto-lang html">HTML · CSS · JS</span>
-              <span class="projeto-arrow">↗</span>
-            </header>
-            <h3>Caminho Mais Barato</h3>
-            <p>Aplicação web que encontra a rota de menor custo entre capitais brasileiras usando Grafo com Lista de Adjacências e algoritmo de Dijkstra com MinHeap.</p>
-            <footer class="projeto-footer"><span>Ver no GitHub</span></footer>
-          </a>
-        </li>
-
-        <li>
-          <a href="https://github.com/Gabriel-Pacheco-K/Agro-carvalho" target="_blank" class="projeto-card">
-            <header class="projeto-header">
-              <span class="projeto-lang html">HTML · CSS · JS</span>
-              <span class="projeto-arrow">↗</span>
-            </header>
-            <h3>Agropecuária Carvalho</h3>
-            <p>Site institucional completo para empresa do setor agropecuário. Layout responsivo com HTML, CSS e JavaScript.</p>
-            <footer class="projeto-footer"><span>Ver no GitHub</span></footer>
-          </a>
-        </li>
-
-        <li>
-          <a href="https://github.com/Gabriel-Pacheco-K" target="_blank" class="projeto-card projeto-card--cta">
-            <header class="projeto-header">
-              <span class="projeto-arrow">↗</span>
-            </header>
-            <h3>Mais projetos</h3>
-            <p>Veja todos os repositórios públicos no meu GitHub.</p>
-            <footer class="projeto-footer"><span>github.com/Gabriel-Pacheco-K</span></footer>
+          <a href="https://github.com/Gabriel-Pacheco-K/financas-api" target="_blank" rel="noopener" class="featured-card">
+            <div class="featured-top">
+              <span class="featured-icon" aria-hidden="true">💰</span>
+              <span class="projeto-arrow" aria-hidden="true">↗</span>
+            </div>
+            <h4>Finanças API</h4>
+            <p>API de finanças pessoais com receitas, despesas e relatório mensal com saldo, taxa de poupança e gastos por categoria.</p>
+            <ul class="featured-points">
+              <li>Autenticação JWT e dados isolados por usuário</li>
+              <li>Filtros dinâmicos com paginação</li>
+              <li>Agregações feitas no banco</li>
+            </ul>
+            <ul class="chips"><li>Spring Security</li><li>JWT</li><li>PostgreSQL</li><li>Flyway</li></ul>
+            <div class="featured-meta"><span class="ci">CI passando</span><span>15 testes</span></div>
           </a>
         </li>
 
       </ul>
-    </article>
+
+      <h3 class="subsection-title">Outros projetos</h3>
+      <ul class="projetos-grid">
+
+        <li>
+          <a href="https://github.com/Gabriel-Pacheco-K/sistema-login-java" target="_blank" rel="noopener" class="projeto-card">
+            <div class="projeto-header">
+              <span class="projeto-lang">Java · Spring Security</span>
+              <span class="projeto-arrow" aria-hidden="true">↗</span>
+            </div>
+            <h4>Sistema de Login</h4>
+            <p>API de autenticação com registro e login, senhas criptografadas com BCrypt e rotas protegidas.</p>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://github.com/Gabriel-Pacheco-K/api-rest-clientes" target="_blank" rel="noopener" class="projeto-card">
+            <div class="projeto-header">
+              <span class="projeto-lang">Java · Spring Boot · PostgreSQL</span>
+              <span class="projeto-arrow" aria-hidden="true">↗</span>
+            </div>
+            <h4>API REST — Cadastro de Clientes</h4>
+            <p>API RESTful com CRUD completo, integrada ao banco de dados PostgreSQL.</p>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://github.com/Gabriel-Pacheco-K/caminho-mais-barato" target="_blank" rel="noopener" class="projeto-card">
+            <div class="projeto-header">
+              <span class="projeto-lang">JavaScript · Grafos</span>
+              <span class="projeto-arrow" aria-hidden="true">↗</span>
+            </div>
+            <h4>Caminho Mais Barato</h4>
+            <p>Rota de menor custo entre capitais brasileiras com lista de adjacências e Dijkstra com MinHeap.</p>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://github.com/Gabriel-Pacheco-K/arvore-binaria-java" target="_blank" rel="noopener" class="projeto-card">
+            <div class="projeto-header">
+              <span class="projeto-lang">Java · Estruturas de dados</span>
+              <span class="projeto-arrow" aria-hidden="true">↗</span>
+            </div>
+            <h4>Árvore Binária</h4>
+            <p>Árvore binária com percursos em ordem, pré-ordem e pós-ordem, além de busca binária.</p>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://github.com/Gabriel-Pacheco-K/Agro-carvalho" target="_blank" rel="noopener" class="projeto-card">
+            <div class="projeto-header">
+              <span class="projeto-lang">HTML · CSS · JS</span>
+              <span class="projeto-arrow" aria-hidden="true">↗</span>
+            </div>
+            <h4>Agropecuária Carvalho</h4>
+            <p>Site institucional responsivo para uma empresa do setor agropecuário.</p>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://github.com/Gabriel-Pacheco-K?tab=repositories" target="_blank" rel="noopener" class="projeto-card projeto-card--cta">
+            <div class="projeto-header">
+              <span class="projeto-lang">GitHub</span>
+              <span class="projeto-arrow" aria-hidden="true">↗</span>
+            </div>
+            <h4>Ver todos os repositórios</h4>
+            <p>Todos os meus projetos públicos estão em github.com/Gabriel-Pacheco-K.</p>
+          </a>
+        </li>
+
+      </ul>
+    </div>
   </section>
 
   <!-- ─── CONTATO ──────────────────────────────────────────────── -->
   <section id="contato">
-    <article class="section-inner contato-inner">
+    <div class="section-inner contato-inner">
       <p class="section-label">Contato</p>
       <h2 class="section-title">Vamos conversar?</h2>
-      <p class="contato-sub">Estou procurando minha primeira oportunidade como desenvolvedor. Se você tem uma vaga, um projeto ou só quer trocar ideia, me manda uma mensagem!</p>
+      <p class="contato-sub">Estou procurando minha primeira oportunidade como desenvolvedor back-end. Se você tem uma vaga, um projeto ou só quer trocar uma ideia, me manda uma mensagem!</p>
 
       <ul class="contato-links">
-
         <li>
-          <a href="https://mail.google.com/mail/?view=cm&to=gabriellpacheco.k@gmail.com" class="contato-item">
-            <span class="contato-icon">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 010 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.910 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/>
-              </svg>
-            </span>
-            <span>gabriellpacheco.k@gmail.com</span>
+          <a href="mailto:gabriellpacheco.k@gmail.com" class="contato-item">
+            <span class="contato-icon"><svg width="18" height="18"><use href="#i-mail"/></svg></span>
+            <span class="contato-text"><small>E-mail</small>gabriellpacheco.k@gmail.com</span>
+            <span class="contato-arrow" aria-hidden="true">→</span>
           </a>
         </li>
-
         <li>
-          <a href="https://wa.me/5548988711607" target="_blank" class="contato-item">
-            <span class="contato-icon">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.554 4.103 1.523 5.827L.057 23.882a.5.5 0 00.61.61l6.056-1.466A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.938a9.926 9.926 0 01-5.058-1.379l-.361-.214-3.737.905.921-3.768-.235-.374A9.927 9.927 0 012.062 12C2.062 6.509 6.509 2.062 12 2.062S21.938 6.509 21.938 12 17.491 21.938 12 21.938z"/>
-              </svg>
-            </span>
-            <span>WhatsApp — (48) 98871-1607</span>
+          <a href="https://www.linkedin.com/in/gabriel-pacheco-3b637a362/" target="_blank" rel="noopener" class="contato-item">
+            <span class="contato-icon"><svg width="18" height="18"><use href="#i-linkedin"/></svg></span>
+            <span class="contato-text"><small>LinkedIn</small>linkedin.com/in/gabriel-pacheco</span>
+            <span class="contato-arrow" aria-hidden="true">→</span>
           </a>
         </li>
-
         <li>
-          <a href="https://www.linkedin.com/in/gabriel-pacheco-3b637a362/" target="_blank" class="contato-item">
-            <span class="contato-icon">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-              </svg>
-            </span>
-            <span>linkedin.com/in/gabriel-pacheco</span>
+          <a href="https://wa.me/5548988711607" target="_blank" rel="noopener" class="contato-item">
+            <span class="contato-icon"><svg width="18" height="18"><use href="#i-whatsapp"/></svg></span>
+            <span class="contato-text"><small>WhatsApp</small>(48) 98871-1607</span>
+            <span class="contato-arrow" aria-hidden="true">→</span>
           </a>
         </li>
-
         <li>
-          <a href="https://github.com/Gabriel-Pacheco-K" target="_blank" class="contato-item">
-            <span class="contato-icon">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
-              </svg>
-            </span>
-            <span>github.com/Gabriel-Pacheco-K</span>
+          <a href="https://github.com/Gabriel-Pacheco-K" target="_blank" rel="noopener" class="contato-item">
+            <span class="contato-icon"><svg width="18" height="18"><use href="#i-github"/></svg></span>
+            <span class="contato-text"><small>GitHub</small>github.com/Gabriel-Pacheco-K</span>
+            <span class="contato-arrow" aria-hidden="true">→</span>
           </a>
         </li>
-
       </ul>
-    </article>
+    </div>
   </section>
+  </main>
 
   <footer>
     <div class="footer-inner">
       <span class="logo">GPK<span class="logo-dot">.</span></span>
-      <span>© 2026 Gabriel Pacheco Kiesel</span>
+      <span>© 2026 Gabriel Pacheco Kiesel · Feito à mão com HTML, CSS e JavaScript</span>
     </div>
   </footer>
 

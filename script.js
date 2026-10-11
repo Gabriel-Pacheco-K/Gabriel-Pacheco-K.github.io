@@ -57,8 +57,9 @@ window.addEventListener('scroll', () => {
 });
 
 // ─── ANIMAÇÃO DE ENTRADA AO SCROLLAR (INTERSECTION OBSERVER) ───
+// A classe .reveal só é aplicada aqui: sem JavaScript, tudo continua visível.
 const animElements = document.querySelectorAll(
-  '.skill-card, .projeto-card, .stat, .contato-item, .sobre-content'
+  '.skill-card, .featured-card, .projeto-card, .stat, .contato-item, .sobre-content'
 );
 
 const observer = new IntersectionObserver((entries) => {
@@ -70,10 +71,27 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.12 });
 
-animElements.forEach(el => {
-  el.classList.add('hidden');
+animElements.forEach((el, index) => {
+  el.classList.add('reveal');
+  el.style.transitionDelay = `${(index % 3) * 80}ms`;
   observer.observe(el);
 });
+
+// ─── MENU NO CELULAR ───────────────────────────────────────────
+const menuToggle = document.querySelector('.menu-toggle');
+const menu = document.getElementById('menu');
+
+if (menuToggle && menu) {
+  const setMenu = (open) => {
+    menu.classList.toggle('open', open);
+    menuToggle.setAttribute('aria-expanded', String(open));
+    menuToggle.setAttribute('aria-label', open ? 'Fechar menu' : 'Abrir menu');
+  };
+
+  menuToggle.addEventListener('click', () => setMenu(!menu.classList.contains('open')));
+  menu.querySelectorAll('a').forEach(link => link.addEventListener('click', () => setMenu(false)));
+  document.addEventListener('keydown', (e) => e.key === 'Escape' && setMenu(false));
+}
 
 // ─── SMOOTH SCROLL COM OFFSET DO HEADER ────────────────────────
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
