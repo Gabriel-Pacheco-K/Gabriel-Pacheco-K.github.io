@@ -74,7 +74,7 @@
           <a href="#contato" class="btn-ghost">Entrar em contato</a>
         </div>
         <ul class="tech-stack" aria-label="Principais tecnologias">
-          <li>Java 21</li><li>Spring Boot</li><li>PostgreSQL</li><li>Redis</li><li>Docker</li><li>JUnit</li>
+          <li>Java 21</li><li>Spring Boot</li><li>RabbitMQ</li><li>PostgreSQL</li><li>Redis</li><li>Docker</li>
         </ul>
       </div>
 
@@ -111,11 +111,11 @@
           <p>Busco minha primeira oportunidade profissional, para aprender na prática, contribuir com projetos reais e crescer junto com um time.</p>
           <ul class="stats-row">
             <li class="stat">
-              <span class="stat-num">9+</span>
+              <span class="stat-num">10+</span>
               <span class="stat-label">projetos no GitHub</span>
             </li>
             <li class="stat">
-              <span class="stat-num">80+</span>
+              <span class="stat-num">100+</span>
               <span class="stat-label">testes automatizados</span>
             </li>
             <li class="stat">
@@ -183,6 +183,24 @@
 
       <h3 class="subsection-title">Em destaque</h3>
       <ul class="featured-grid">
+
+        <li>
+          <a href="https://github.com/Gabriel-Pacheco-K/pedidos-rabbitmq" target="_blank" rel="noopener" class="featured-card">
+            <div class="featured-top">
+              <span class="featured-icon" aria-hidden="true">📦</span>
+              <span class="projeto-arrow" aria-hidden="true">↗</span>
+            </div>
+            <h4>Pedidos com RabbitMQ</h4>
+            <p>Três microsserviços (pedidos, estoque e pagamento) que conversam por eventos numa saga coreografada, com foco em segurança e em não perder nem duplicar mensagens.</p>
+            <ul class="featured-points">
+              <li>Eventos assinados com Ed25519 e permissões mínimas por serviço no broker</li>
+              <li>Outbox transacional, inbox idempotente e fila de mensagens mortas</li>
+              <li>Ataques testados: evento forjado, adulterado, duplicado e fora de ordem</li>
+            </ul>
+            <ul class="chips"><li>RabbitMQ</li><li>Spring Boot</li><li>PostgreSQL</li><li>Testcontainers</li></ul>
+            <div class="featured-meta"><span class="ci">CI passando</span><span>29 testes</span></div>
+          </a>
+        </li>
 
         <li>
           <a href="https://github.com/Gabriel-Pacheco-K/agendamento-api" target="_blank" rel="noopener" class="featured-card">
