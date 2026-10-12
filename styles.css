@@ -575,6 +575,20 @@ section { padding: 7rem 2rem; }
 .featured-grid > li { display: flex; flex-direction: column; gap: 0.6rem; }
 .featured-grid > li > .featured-card { flex: 1; }
 
+/* Trabalho para cliente: card largo com o print do site ao lado */
+.client-grid { grid-template-columns: 1fr; }
+.featured-card.client-card { display: grid; grid-template-columns: 1.1fr 1fr; gap: 1.75rem; align-items: center; }
+.client-card img { width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; object-position: top; border-radius: 12px; border: 1px solid var(--border); }
+.client-tag {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  color: var(--accent2);
+  border: 1px solid var(--border-hi);
+  border-radius: 999px;
+  padding: 0.2rem 0.7rem;
+}
+@media (max-width: 760px) { .featured-card.client-card { grid-template-columns: 1fr; } }
+
 /* Botão de demonstração ao vivo, abaixo do card */
 .demo-link {
   display: flex;
