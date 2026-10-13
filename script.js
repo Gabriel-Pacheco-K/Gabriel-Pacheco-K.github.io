@@ -12,7 +12,7 @@ console.log(
 console.log(
   '%c👋Opa dev, você é curioso que nem eu, sempre do um F12 > Console kkkkkk\n\n' +
   '%c📌 Gabriel Pacheco Kiesel\n' +
-  '🎓 Ciência da Computação — 5ª fase\n' +
+  '💼 Disponível para vaga back-end júnior\n' +
   '💻 Foco em back-end: Java, SQL, APIs REST\n' +
   '📱 WhatsApp: (48) 98871-1607\n' +
   '📧 gabriellpacheco.k@gmail.com\n' +
