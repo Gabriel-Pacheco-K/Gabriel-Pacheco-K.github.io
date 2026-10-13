@@ -127,3 +127,16 @@ const badge = document.querySelector('.photo-badge');
 if (badge) {
   badge.setAttribute('title', 'Disponível para trabalho imediato!');
 }
+
+// Demonstrações dos projetos: só tocam quando aparecem na tela, e não tocam para quem prefere menos movimento
+const demos = document.querySelectorAll('.card-demo');
+const reduzMovimento = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+if (demos.length && 'IntersectionObserver' in window && !reduzMovimento) {
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(({ target, isIntersecting }) => {
+      if (isIntersecting) target.play().catch(() => {});
+      else target.pause();
+    });
+  }, { threshold: 0.4 });
+  demos.forEach((v) => obs.observe(v));
+}

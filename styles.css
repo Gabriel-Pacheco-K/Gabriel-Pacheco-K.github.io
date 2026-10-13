@@ -1017,3 +1017,14 @@ footer {
   .photo-frame::after { display: none; }
   .footer-inner { justify-content: center; text-align: center; }
 }
+
+/* Vídeo curto de demonstração no topo de cada projeto em destaque */
+.card-demo {
+  display: block;
+  width: calc(100% + 3.5rem);
+  margin: -1.75rem -1.75rem 1.4rem;
+  aspect-ratio: 16 / 10;
+  object-fit: contain;
+  background: #161821;
+  border-bottom: 1px solid var(--border);
+}
