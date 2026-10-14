@@ -121,12 +121,12 @@
               <span class="stat-label">projetos no GitHub</span>
             </li>
             <li class="stat">
-              <span class="stat-num">100+</span>
+              <span class="stat-num">1.000+</span>
               <span class="stat-label">testes automatizados</span>
             </li>
             <li class="stat">
-              <span class="stat-num">4</span>
-              <span class="stat-label">APIs com Docker e CI</span>
+              <span class="stat-num">5</span>
+              <span class="stat-label">projetos com Docker e CI</span>
             </li>
           </ul>
         </div>
@@ -189,6 +189,25 @@
 
       <h3 class="subsection-title">Em destaque</h3>
       <ul class="featured-grid">
+
+        <li>
+          <a href="https://github.com/Gabriel-Pacheco-K/atendente-whatsapp" target="_blank" rel="noopener" class="featured-card">
+            <video class="card-demo" poster="media/atendente.jpg" muted loop playsinline preload="none" aria-label="Demonstração do atendente: o cliente agenda e cancela pelo chat e a agenda do agendamento-api muda ao vivo"><source src="media/atendente.mp4" type="video/mp4"><source src="media/atendente.webm" type="video/webm"></video>
+            <div class="featured-top">
+              <span class="featured-icon" aria-hidden="true">💬</span>
+              <span class="projeto-arrow" aria-hidden="true">↗</span>
+            </div>
+            <h4>Atendente de WhatsApp</h4>
+            <p>Atendente que agenda, lista e cancela horários conversando em português, com erro de digitação e tudo, integrado a uma API de agendamento real. Funciona sem IA paga; o Claude é opcional.</p>
+            <ul class="featured-points">
+              <li>Webhook da WhatsApp Cloud API com assinatura HMAC e idempotência</li>
+              <li>8 "sim" ao mesmo tempo geram 1 agendamento só, comprovado em teste</li>
+              <li>Arquitetura hexagonal validada com ArchUnit e teste ponta a ponta no CI</li>
+            </ul>
+            <ul class="chips"><li>Java 21</li><li>Spring Boot</li><li>PostgreSQL</li><li>WhatsApp API</li></ul>
+            <div class="featured-meta"><span class="ci">CI passando</span><span>978 testes</span></div>
+          </a>
+        </li>
 
         <li>
           <a href="https://github.com/Gabriel-Pacheco-K/pedidos-rabbitmq" target="_blank" rel="noopener" class="featured-card">
@@ -299,6 +318,22 @@
             <span aria-hidden="true">↗</span>
           </a>
         </li>
+      </ul>
+
+      <h3 class="subsection-title">Prévias para negócios da região</h3>
+      <ul class="previews-grid">
+        <li><a href="https://gabriel-pacheco-k.github.io/previa-agrofarias/" target="_blank" rel="noopener" class="preview-card">
+          <span class="client-tag">Prévia · Maracajá/SC</span><h4>Comercial Agro Farias</h4>
+          <p>Pedido montado no site e enviado pronto pelo WhatsApp; selo de aberto ou fechado em tempo real.</p></a></li>
+        <li><a href="https://gabriel-pacheco-k.github.io/previa-agroberti/" target="_blank" rel="noopener" class="preview-card">
+          <span class="client-tag">Prévia · Criciúma/SC</span><h4>Morangos AgroBerti</h4>
+          <p>Encomenda de morangos que chega pronta no WhatsApp e página para confeitarias e restaurantes.</p></a></li>
+        <li><a href="https://gabriel-pacheco-k.github.io/previa-duarte/" target="_blank" rel="noopener" class="preview-card">
+          <span class="client-tag">Prévia · Meleiro/SC</span><h4>Duarte Multimarcas</h4>
+          <p>Estoque de carros com filtros e interesse em cada carro enviado direto pelo WhatsApp.</p></a></li>
+        <li><a href="https://gabriel-pacheco-k.github.io/previa-carvalho-pet/" target="_blank" rel="noopener" class="preview-card">
+          <span class="client-tag">Prévia · banho e tosa</span><h4>Agropecuária Carvalho Pet</h4>
+          <p>Agendamento de banho e tosa e pedidos de produtos pelo WhatsApp, pensado para o celular.</p></a></li>
       </ul>
 
       <h3 class="subsection-title">Outros projetos</h3>

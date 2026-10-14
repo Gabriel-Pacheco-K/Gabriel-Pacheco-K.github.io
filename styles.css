@@ -1028,3 +1028,11 @@ footer {
   background: #161821;
   border-bottom: 1px solid var(--border);
 }
+
+/* Prévias para negócios da região */
+.previews-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; margin-bottom: 3rem; }
+.preview-card { display: flex; flex-direction: column; gap: .5rem; height: 100%; padding: 1.25rem; border: 1px solid var(--border); border-radius: var(--radius); background: var(--bg-card); color: var(--text); text-decoration: none; transition: border-color .2s, transform .2s; }
+.preview-card h4 { font-size: 1.05rem; }
+.preview-card p { color: var(--muted); font-size: .9rem; line-height: 1.5; }
+.preview-card .client-tag { align-self: flex-start; }
+@media (hover: hover) { .preview-card:hover { border-color: var(--border-hi); transform: translateY(-2px); } }
